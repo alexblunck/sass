@@ -1,13 +1,17 @@
 {
   "name": "@blunck/sass",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Sass utility functions, mixins, classes & default styles",
   "main": "src/index.scss",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexblunck/sass.git"
   },
-  "keywords": ["sass", "sanitize.css", "utilities"],
+  "keywords": [
+    "sass",
+    "sanitize.css",
+    "utilities"
+  ],
   "author": "Alexander Blunck",
   "license": "MIT",
   "bugs": {
