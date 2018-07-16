@@ -1,0 +1,97 @@
+//
+// Styles
+// typography
+//
+
+html {
+    // Override sanitize.css
+    line-height: initial;
+}
+
+body,
+select,
+button,
+input {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+
+    @if ($sass-antialiased-text) {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+* {
+    letter-spacing: .02em;
+}
+
+
+// Links
+
+a,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+// Paragraphs
+
+p {
+    margin: 0;
+
+    &.dimmed {
+        color: gs(30%);
+    }
+}
+
+
+// Headings
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 300;
+    color: gs(15%);
+
+    &.bold {
+        font-weight: 400;
+    }
+
+    &.light {
+        font-weight: 300;
+    }
+
+    &.head {
+        margin-bottom: 10px;
+    }
+
+    &.gray, .gray { color: gs(40%); }
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    color: gs(10%);
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 16px;
+}

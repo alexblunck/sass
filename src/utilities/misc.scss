@@ -1,0 +1,34 @@
+//
+// Utilities
+// misc
+//
+
+// ----------------------------------------------------------------------
+// @type Mixin
+// Disable user selection completely
+// ----------------------------------------------------------------------
+@mixin hide-selection {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+// ----------------------------------------------------------------------
+// @type Mixin
+// Set styles for placeholder
+//
+// Example:
+// @include placeholder {
+//     color: red;
+//     font-style: italic;
+// }
+// ----------------------------------------------------------------------
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content;}
+    &:-moz-placeholder {@content;}
+    &::-moz-placeholder {@content;}
+    &:-ms-input-placeholder {@content;}
+}
