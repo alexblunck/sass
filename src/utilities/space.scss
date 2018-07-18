@@ -16,9 +16,9 @@
 }
 
 
-// Space Vertical s-v-{5-100}
+// Space Vertical s-v-{5-150}
 
-@for $i from 1 through 100 {
+@for $i from 1 through 150 {
     @if $i % 5 == 0 {
         .s-v-#{$i} {
             display: block;
