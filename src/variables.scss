@@ -1,0 +1,27 @@
+//
+// Styles
+// variables
+//
+
+// Options
+
+$sass-antialiased-text: false !default;
+
+
+// Colors
+
+$sass-color-red: #f05958;
+$sass-color-green: #31ca50;
+$sass-color-blue: #108df6;
+$sass-color-orange: #fc6f5c;
+$sass-color-purple: #9446d9;
+$sass-color-yellow: #fbcd33;
+$sass-color-pink: #f05892;
+$sass-color-dark-red: #f61010;
+$sass-color-facebook: #4673d3;
+
+
+// Easing
+
+$sass-ease-out-quintic: cubic-bezier(.245, .998, .32, 1);
+$sass-ease-jump: cubic-bezier(.42, .8, .58, 1.2);
