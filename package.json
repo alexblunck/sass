@@ -1,6 +1,6 @@
 {
   "name": "@blunck/sass",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Sass utility functions, mixins, classes & default styles",
   "main": "src/index.scss",
   "repository": {
