@@ -5,12 +5,19 @@
 
 // ----------------------------------------------------------------------
 // @type Function
-// Get a grayscale rgba value by using percentages
+// Get a grayscale rgba value by using percentages / decimals
 //
-// @param $percent  Grayscale percentage, 0% Black - 100% White
-// @param $alpha    Alpha value between 0 and 1
+// @param $number Grayscale percentage, 0% Black - 100% White or decimal, 0 Black - 1 White
+// @param $alpha  Alpha value between 0 and 1
 // ----------------------------------------------------------------------
-@function gs($percent, $alpha: 1) {
+@function gs($number, $alpha: 1) {
+    $unit: unit($number);
+    $percent: $number;
+
+    @if $unit != '%' {
+        $percent: percentage($number)
+    }
+
     $rgb: (255 / 100) * ($percent / 1%);
     @return rgba($rgb, $rgb, $rgb, $alpha);
 }
