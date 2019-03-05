@@ -13,6 +13,13 @@
     display: inline-block;
 }
 
+.d-f {
+    display: flex;
+}
+
+.d-if {
+    display: inline-flex;
+}
 
 // Padding
 
@@ -20,6 +27,15 @@
     padding: 0;
 }
 
+// Flex
+
+.f-align-items-center {
+    align-items: center;
+}
+
+.f-justify-content-center {
+    justify-content: center;
+}
 
 // Flex Center Horizontally + Vertically
 
@@ -34,7 +50,6 @@
     justify-content: center;
     align-items: center;
 }
-
 
 // Width 100%
 
@@ -52,7 +67,6 @@
     }
 }
 
-
 // Height 100%
 
 .h-full {
@@ -69,14 +83,12 @@
     }
 }
 
-
 // Margin Auto
 
 .m-auto {
     margin-right: auto;
     margin-left: auto;
 }
-
 
 // Margin Bottom mb-{5-50}
 
@@ -88,6 +100,11 @@
     }
 }
 
+// Postion
+
+.p-r {
+    position: relative;
+}
 
 // Text Align
 
@@ -99,11 +116,11 @@
     text-align: center;
 }
 
-
 // Transition
 
 .notransition {
-    &, * {
+    &,
+    * {
         transition: none !important;
     }
 }
